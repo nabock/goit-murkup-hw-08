@@ -1,12 +1,20 @@
 .list-title {
-	display: flex;
-	margin-left: -30px;
+	// margin-left: -30px;
 	list-style: none;
+
+	@media screen and (min-width: 768px) {
+		display: flex;
+		flex-wrap: wrap;
+	}
 }
 
 .description-title {
-	margin-left: 30px;
-	flex-basis: calc(100% / 4 - 30px);
+	// margin-left: 30px;
+	// flex-basis: calc(100% / 4 - 30px);
+
+	@media screen and (min-width: 768px) {
+		width: 50%;
+	}
 
 	&:nth-child(1)::before {
 		background-image: url("../image/svg/antena.svg");
