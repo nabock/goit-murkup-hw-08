@@ -1,5 +1,6 @@
 .contacts-container {
-	display: flex;
+	// display: flex;
+	margin-top: 54px;
 	list-style: none;
 	text-align: center;
 	margin-left: auto;
@@ -7,8 +8,12 @@
 
 	transition: $time-animation;
 
-	& .item + .item {
-		margin-left: 50px;
+	// & .item + .item {
+	// 	margin-bottom: 15px;
+	// }
+
+	& .item:not(:last-child) {
+		margin-bottom: 15px;
 	}
 }
 

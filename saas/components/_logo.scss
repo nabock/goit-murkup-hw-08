@@ -1,12 +1,15 @@
 .logo {
+	display: inline-flex;
 	color: $accent-color;
 	font-family: $secondary-font;
 	font-weight: bold;
 	font-size: 26px;
 	line-height: 1.19;
 
-	margin-right: 93px;
+	// margin-right: 93px;
 	text-decoration: none;
+	text-align: left;
+	justify-content: center;
 }
 
 .logo-part-two {
