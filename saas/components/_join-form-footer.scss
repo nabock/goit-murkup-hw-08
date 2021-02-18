@@ -1,6 +1,6 @@
 .join-form {
-	display: inline-block;
-	margin-left: 92px;
+	// display: inline-block;
+	// margin-left: 92px;
 
 	.join-title-form {
 		font-weight: bold;
@@ -13,10 +13,12 @@
 }
 
 .form {
-	display: inline-block;
-	width: 358px;
+	// display: inline-block;
+	// width: 358px;
+	width: 100%;
 
 	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 .join-form-field {
@@ -27,7 +29,8 @@
 }
 
 .form-input {
-	width: 358px;
+	// width: 358px;
+	width: 100%;
 	background-color: #2f303a;
 	padding: 15px 0px 15px 16px;
 

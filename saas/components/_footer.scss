@@ -1,12 +1,22 @@
 .footer {
+	height: 603px;
 	padding-top: 60px;
 	padding-bottom: 60px;
 	background-color: $bg-footer;
+	text-align: center;
+	justify-content: center;
 }
 
 .bottom-line {
-	display: flex;
-	align-items: baseline;
+	// display: flex;
+	// align-items: center;
+	justify-content: center;
+}
+
+.address-style {
+	// align-items: center;
+	justify-content: center;
+	margin-bottom: 50px;
 }
 
 .logo-f {
@@ -21,6 +31,9 @@
 
 	margin-bottom: 20px;
 
+	align-items: center;
+	justify-content: center;
+
 	.logo-footer {
 		color: $primerry-bg-color;
 		text-decoration: none;
@@ -28,7 +41,7 @@
 }
 
 .footer-list {
-	display: flexbox;
+	// display: flexbox;
 
 	list-style: none;
 	padding-left: 0px;

@@ -666,18 +666,27 @@ footer {
 }
 
 .footer {
+  height: 603px;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .bottom-line {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.address-style {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
 }
 
 .logo-f {
@@ -689,6 +698,12 @@ footer {
   line-height: 1.19;
   text-decoration: none;
   margin-bottom: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .logo-f .logo-footer {
@@ -697,7 +712,6 @@ footer {
 }
 
 .footer-list {
-  display: flexbox;
   list-style: none;
   padding-left: 0px;
 }
@@ -724,12 +738,7 @@ footer {
 }
 
 .join {
-  display: block;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin-left: 70px;
+  margin-bottom: 60px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -751,13 +760,15 @@ footer {
   display: flex;
   margin-top: 25px;
   list-style: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .join-icon {
-  width: 20px;
-  height: 20px;
+  width: 44px;
+  height: 44px;
   margin-right: 10px;
-  width: calc(100% / 4 - 10px);
 }
 
 .link-network {
@@ -793,11 +804,6 @@ footer {
   fill: #ffffff;
 }
 
-.join-form {
-  display: inline-block;
-  margin-left: 92px;
-}
-
 .join-form .join-title-form {
   font-weight: bold;
   font-size: 14px;
@@ -807,9 +813,9 @@ footer {
 }
 
 .form {
-  display: inline-block;
-  width: 358px;
+  width: 100%;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .join-form-field {
@@ -819,7 +825,7 @@ footer {
 }
 
 .form-input {
-  width: 358px;
+  width: 100%;
   background-color: #2f303a;
   padding: 15px 0px 15px 16px;
   color: rgba(255, 255, 255, 0.6);

@@ -1,8 +1,9 @@
 .join {
-	display: block;
-	flex-direction: row;
+	// display: block;
+	// flex-direction: row;
 
-	margin-left: 70px;
+	// margin-left: 70px;
+	margin-bottom: 60px;
 	font-family: $primerry-font;
 	font-style: normal;
 	font-weight: bold;
@@ -24,14 +25,15 @@
 	display: flex;
 	margin-top: 25px;
 	list-style: none;
+	justify-content: center;
 }
 
 .join-icon {
-	width: 20px;
-	height: 20px;
+	width: 44px;
+	height: 44px;
 	margin-right: 10px;
 
-	width: calc(100% / 4 - 10px);
+	// width: calc(100% / 4 - 10px);
 }
 
 .link-network {
