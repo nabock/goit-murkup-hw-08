@@ -360,7 +360,8 @@ footer {
 .page-header {
   position: relative;
   background: #ffffff;
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid #757575;
+  z-index: 101;
 }
 
 .underline {
@@ -432,6 +433,7 @@ footer {
 .burger-menu {
   display: none;
   position: absolute;
+  z-index: 100;
   top: 100%;
   left: 0;
   width: 100%;

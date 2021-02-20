@@ -6,6 +6,7 @@
 .burger-menu {
 	display: none;
 	position: absolute;
+	z-index: 100;
 	top: 100%;
 	left: 0;
 	width: 100%;

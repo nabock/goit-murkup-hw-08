@@ -1,7 +1,8 @@
 .page-header {
 	position: relative;
 	background: $primerry-bg-color;
-	border-bottom: 1px solid #ececec;
+	border-bottom: 1px solid $title-text-color;
+	z-index: 101;
 
 	// padding-top: 24px;
 	// padding-bottom: 25px;
