@@ -35,8 +35,11 @@ ol {
 	list-style: none;
 }
 
-img {
+img,
+svg {
 	display: block;
+	max-width: 100%;
+	height: auto;
 }
 
 address {
@@ -56,6 +59,7 @@ a {
 	padding-left: 15px;
 	padding-right: 15px;
 	// max-width: 1200px;
+	border: 1px solid green;
 
 	@media screen and (min-width: 480px) {
 		width: 480px;
@@ -75,6 +79,8 @@ a {
 	padding-bottom: 94px;
 	margin-left: auto;
 	margin-right: auto;
+
+	border: 1px solid red;
 }
 
 .section-title {
