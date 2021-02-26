@@ -12,17 +12,17 @@
 .list-title-projects {
 	background-color: $primerry-bg-color;
 
-	@media screen and (max-width: 480px) {
+	@media screen and (max-width: 767px) {
 		&:not(:last-child) {
 			margin-bottom: 30px;
 		}
 	}
 
-	@media screen and (min-width: 480px) {
-		&:not(:last-child) {
-			margin-bottom: 30px;
-		}
-	}
+	// @media screen and (min-width: 480px) {
+	// 	&:not(:last-child) {
+	// 		margin-bottom: 30px;
+	// 	}
+	// }
 
 	@media screen and (min-width: 768px) {
 		&:not(:last-child) {
@@ -61,7 +61,7 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
-	padding: 13px 24px;
+	padding: 40px 24px;
 	font-size: 16px;
 	line-height: 1.56;
 	letter-spacing: 0.03em;
@@ -76,7 +76,7 @@
 	transform: translateY(+101%);
 	transition: $time-animation;
 
-	@media screen and (min-width: 480px) {
+	@media screen and (min-width: 480px) and (max-width: 767px) {
 		padding: 77px 24px;
 		font-size: 18px;
 	}
