@@ -1,8 +1,10 @@
 .contacts-container {
 	list-style: none;
-	text-align: center;
-	margin-left: auto;
+	text-align: start;
+	// margin-left: auto;
 	align-items: center;
+
+	// border: 1px solid red;
 
 	transition: $time-animation;
 
@@ -11,10 +13,11 @@
 	// }
 
 	@media screen and (max-width: 767px) {
-		margin-top: 54px;
+		// margin-top: 302px;
+		// margin-bottom: 64px;
 
 		& .item:not(:last-child) {
-			margin-bottom: 15px;
+			margin-bottom: 32px;
 		}
 	}
 
@@ -28,7 +31,7 @@
 
 	@media screen and (min-width: 1200px) {
 		display: flex;
-		margin-left: 304px;
+		margin-left: 300px;
 		margin-bottom: 0px;
 
 		& .item:not(:last-child) {
@@ -38,17 +41,32 @@
 	}
 }
 
+.mobile-sb {
+	// border: 1px solid red;
+
+	@media screen and (max-width: 767px) {
+		// margin-top: 100px;
+	}
+	// @media screen and (min-width: 768px) {
+	// 	display: none;
+	// }
+}
+
 .icon-mail {
-	display: inline-block;
-	width: 14px;
-	height: 10px;
+	display: none;
 
-	background-size: contain;
-	background-position: center;
-	margin-right: 8px;
-	fill: $title-text-color;
+	@media screen and (min-width: 768px) {
+		display: inline-block;
+		width: 14px;
+		height: 10px;
 
-	transition: $time-animation;
+		background-size: contain;
+		background-position: center;
+		margin-right: 8px;
+		fill: $title-text-color;
+
+		transition: $time-animation;
+	}
 
 	@media screen and (min-width: 1200px) {
 		width: 16px;
@@ -57,16 +75,20 @@
 }
 
 .icon-smartphone {
-	display: inline-block;
+	display: none;
 
-	width: 10px;
-	height: 14px;
+	@media screen and (min-width: 768px) {
+		display: inline-block;
 
-	background-size: contain;
-	background-position: center;
-	margin-right: 8px;
+		width: 10px;
+		height: 14px;
 
-	transition: $time-animation;
+		background-size: contain;
+		background-position: center;
+		margin-right: 8px;
+
+		transition: $time-animation;
+	}
 
 	@media screen and (min-width: 1200px) {
 		height: 16px;
@@ -76,8 +98,8 @@
 .contacts-link {
 	font-style: normal;
 	font-weight: 500;
-	font-size: 18px;
-	line-height: 1.172;
+	font-size: 24px;
+	line-height: 1.167;
 	letter-spacing: 0.02em;
 
 	color: $title-text-color;
@@ -88,6 +110,7 @@
 
 	@media screen and (min-width: 768px) {
 		font-size: 12px;
+		line-height: 1.172;
 		text-align: start;
 	}
 
@@ -100,10 +123,69 @@
 	&:hover,
 	&:focus {
 		color: $accent-color;
+
+		@media screen and (max-width: 479px) {
+			font-size: 29px;
+			line-height: 1.176;
+		}
+
+		@media screen and (min-width: 480px) and(max-width: 767px) {
+			font-size: 40px;
+			line-height: 1.176;
+		}
 	}
 
 	&:hover svg,
 	&:focus svg {
 		fill: $accent-color;
+	}
+}
+
+.mobile-soclink {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+
+	max-width: 480px;
+	// border: 1px solid green;
+
+	@media screen and (min-width: 480px) {
+		justify-content: start;
+	}
+
+	@media screen and (min-width: 768px) {
+		display: none;
+	}
+
+	& .soclink {
+		// margin-top: 20px;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 1.222;
+
+		// border: 1px solid yellow;
+
+		letter-spacing: 0.02em;
+
+		color: $accent-color;
+
+		&:not(:first-child) {
+			@media screen and (min-width: 480px) {
+				border-left: 1px solid rgba(33, 33, 33, 0.2);
+				padding-left: 10px;
+			}
+		}
+
+		&:not(:last-child) {
+			padding-right: 10px;
+		}
+
+		@media screen and (max-width: 479px) {
+			font-size: 14px;
+
+			&:nth-child(-n + 2) {
+				margin-bottom: 15px;
+			}
+		}
 	}
 }

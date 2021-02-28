@@ -6,46 +6,93 @@
 }
 
 .burger-menu {
-	// display: none;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	display: none;
 
-	text-align: center;
+	// text-align: start;
+
+	// border: 1px solid blue;
+
+	display: flex;
+
 	background-color: $primerry-bg-color;
 
-	&.is-open {
-		display: block;
-	}
-
 	@media screen and (max-width: 767px) {
-		display: none;
 		position: absolute;
-		z-index: 100;
-		top: 101%;
-		left: 0;
-		width: 100%;
-		height: 377px;
-	}
 
-	@media screen and (min-width: 768px) {
-		display: flex;
+		width: 100%;
+		max-width: 480px;
+		height: 100vh;
+		left: 50%;
+		transform: translateX(-50%) translateY(-100%);
+		padding: 48px 40px;
+
+		flex-direction: column;
+		text-align: start;
 		justify-content: space-between;
 	}
+
+	&.is-open {
+		transform: translateX(-50%) translateY(0%);
+	}
+
+	// @media screen and (min-width: 768px) {
+
+	// }
 }
 
-.nav {
-	// display: flex;
-	text-align: center;
-	min-height: 60px;
+.menu-close {
+	position: absolute;
+	display: flex;
+	margin: 0;
+	top: 10px;
+	right: 15px;
+	width: 40px;
+	height: 40px;
+	padding: auto;
+	border: none;
+	background-color: transparent;
+
+	background-position: center;
+
+	justify-content: center;
+	align-items: center;
+	transition: $time-animation;
+
+	// border: 1px solid red;
+
+	@media screen and (min-width: 768px) {
+		display: none;
+	}
+
+	&:hover .icon-close,
+	&:focus .icon-close {
+		fill: $accent-color;
+	}
 }
+
+.icon-burger {
+	width: 20px;
+	height: 18px;
+}
+
+// .nav {
+// 	// display: flex;
+// 	text-align: center;
+// 	// height: 80px;
+// }
 
 .site-nav {
 	// position: relative;
 
 	// display: flex;
-	margin-top: 58px;
+
 	list-style: none;
 
 	& .item:not(:last-child) {
-		margin-bottom: 40px;
+		margin-bottom: 20px;
 
 		@media screen and (min-width: 768px) {
 			margin-bottom: 0px;
@@ -54,8 +101,8 @@
 
 	@media screen and (min-width: 768px) {
 		display: flex;
-		margin-top: 0px;
-		// margin-left: 88px;
+		// margin-top: 0px;
+		margin-left: 60px;
 		align-items: center;
 
 		& .item:not(:last-child) {
@@ -73,7 +120,7 @@
 
 	color: $primerry-text-color;
 	font-weight: 500;
-	font-size: 18px;
+	font-size: 40px;
 	line-height: 1.172;
 	letter-spacing: 0.02em;
 	text-decoration: none;
@@ -86,16 +133,20 @@
 }
 
 .link.current::after {
+	// display: none;
 	position: absolute;
 	display: inline-block;
 	content: "";
 
-	width: 100%;
+	width: 0%;
 	height: 4px;
+
 	border-radius: 2px;
 	background-color: $accent-color;
 
 	@media screen and (min-width: 768px) {
+		// display: block;
+		width: 100%;
 		left: 0;
 		bottom: -33px;
 	}

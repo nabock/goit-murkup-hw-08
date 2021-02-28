@@ -19,14 +19,17 @@
 			<div class="container nav">
 				<nav class="nav-container">
 					<a class="logo" href="./index.html">Web<span class="logo-part-two">Studio</span></a>
-					<button type="button" class="menu_button" aria-expanded="false" data-menu-button>
-						<svg width="20" height="20" aria-label="переключатель мобильного меню">
-							<use class="icon-cross" href="./image/sprite.svg#close"></use>
-
-							<use class="icon-menu" href="./image/sprite.svg#icon-menu"></use>
+					<button type="button" class="menu_button" data-menu-button>
+						<svg class="icon-burger">
+							<use class="icon-menu" href="./image/sprite.svg#icon-menu" width="20" height="20"></use>
 						</svg>
 					</button>
 					<div class="burger-menu" data-menu>
+						<button type="button" data-menu-close class="menu-close">
+							<svg class="icon-close">
+								<use href="./image/sprite.svg#close"></use>
+							</svg>
+						</button>
 						<ul class="site-nav">
 							<li class="item">
 								<div class="underline">
@@ -47,6 +50,7 @@
 							</li>
 						</ul>
 
+						<!-- <div class="mobile-sb"> -->
 						<ul class="contacts-container">
 							<li class="item">
 								<a class="contacts-link" href="mailto:info@devstudio.com"
@@ -66,6 +70,25 @@
 								</a>
 							</li>
 						</ul>
+
+						<ul class="mobile-soclink">
+							<li class="soclink">
+								<a href="">Instagram</a>
+							</li>
+
+							<li class="soclink">
+								<a href="">Twitter</a>
+							</li>
+
+							<li class="soclink">
+								<a href="">Facebook</a>
+							</li>
+
+							<li class="soclink">
+								<a href="">LinkedIn</a>
+							</li>
+						</ul>
+						<!-- </div> -->
 					</div>
 				</nav>
 			</div>
