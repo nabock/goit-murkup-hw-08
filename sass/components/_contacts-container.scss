@@ -22,7 +22,7 @@
 	}
 
 	@media screen and (min-width: 768px) {
-		margin-left: 58px;
+		margin-left: 84px;
 
 		& .item:not(:last-child) {
 			margin-bottom: 10px;
@@ -41,16 +41,11 @@
 	}
 }
 
-.mobile-sb {
-	// border: 1px solid red;
-
-	@media screen and (max-width: 767px) {
-		// margin-top: 100px;
-	}
-	// @media screen and (min-width: 768px) {
-	// 	display: none;
-	// }
-}
+// .mobile-sb {
+// 	display: flex;
+// 	flex-direction: column;
+// 	justify-content: space-between;
+// }
 
 .icon-mail {
 	display: none;
@@ -130,7 +125,7 @@
 		}
 
 		@media screen and (min-width: 480px) and(max-width: 767px) {
-			font-size: 40px;
+			font-size: 34px;
 			line-height: 1.176;
 		}
 	}
@@ -153,6 +148,10 @@
 		justify-content: start;
 	}
 
+	@media screen and (max-width: 767px) {
+		margin-top: 64px;
+	}
+
 	@media screen and (min-width: 768px) {
 		display: none;
 	}
@@ -170,6 +169,11 @@
 		color: $accent-color;
 
 		&:not(:first-child) {
+			@media screen and (min-width: 375px) {
+				border-left: 1px solid rgba(33, 33, 33, 0.2);
+				padding-left: 5px;
+			}
+
 			@media screen and (min-width: 480px) {
 				border-left: 1px solid rgba(33, 33, 33, 0.2);
 				padding-left: 10px;
@@ -180,12 +184,20 @@
 			padding-right: 10px;
 		}
 
+		@media screen and (max-width: 374px) {
+			font-size: 14px;
+
+			// &:nth-child(-n + 2) {
+			// 	margin-bottom: 15px;
+			// }
+		}
+
 		@media screen and (max-width: 479px) {
 			font-size: 14px;
 
-			&:nth-child(-n + 2) {
-				margin-bottom: 15px;
-			}
+			// &:nth-child(-n + 2) {
+			// 	margin-bottom: 15px;
+			// }
 		}
 	}
 }
